@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="app.css" rel="stylesheet">
+</head>
+<body style="overflow: hidden">
+
+<nav class="navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" style="width: 200px;margin-left: 150px">
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+
+
+        <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+            <ul class="nav navbar-nav" id="mytab">
+                <li class="active"><a href="#" onclick="toindex()">首页</a></li>
+                <!--<li class="active"><a href="#" onclick="toindex()">首页</a></li>-->
+                <li><a href="#" onclick="toservice()">社区服务</a></li>
+                <li><a href="#" onclick="toproduct()">产品介绍</a></li>
+                <li><a href="#" onclick="toindex2()">公司新闻</a></li>
+                <li><a href="#" onclick="tome()">关于我们</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="onepage" >
+    <div class="onepage-bg" id="onepagebg"></div>
+
+
+    <div class="container" >
+        <div class="row">
+            <div id="title-text-one" class="title-text-one">
+                <div class="col-md-12 headfontsize">
+                    <h3 style="color:#004FE1;font-family:HYk2gj;font-size: 72px">全日通</h3>
+                    <h1 style="font-family: HYk2gj;font-size: 36px;color: #454545;margin-top: 60px" >一站式社区O2O平台</h1>
+                    <h4 style="font-family:simhei;font-size: 18px;color: #454545;font-weight:bold;margin-top: 20px">服务到家 你的生活管家</h4>
+                    <div id="page1but">
+                        <a href="###">微信公众号</a>
+                        <a href="###" onclick="showcode()">APP下载</a>
+                        <a href="###" >快递员入口</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="towpage">
+    <div id="towpage-text" class="towpage-text" >
+        <h2 class="twopage-text-h1" style="color: blue;margin-top: 100px">
+            全品类商品及服务打造智慧社区
+        </h2>
+        <p style="letter-spacing: 20px">服务到家尊享体验</p>
+    </div>
+    <div class="container" >
+        <div id="box_box1" class="box box1">
+            <img src="images/p1.png" class="boximg">
+            <div>便利店</div>
+            <div>饮料/休闲食品等应有尽有</div>
+        </div>
+        <div id="box_box2" class="box box2" >
+            <img src="images/p2.png" class="boximg">
+            <div>生活服务</div>
+            <div>旅游/酒店/上门服务等一应俱全</div>
+        </div>
+        <div id="box_box3" class="box box3">
+             <img src="images/p3.png" class="boximg">
+            <div>日用品</div>
+            <div>母婴/清理护理用品等要啥有啥</div>
+        </div>
+        <div id="box_box4" class="box box4">
+            <img src="images/p4.png" class="boximg">
+            <div>生鲜</div>
+            <div>水果/蔬菜/禽类等每日新鲜低价</div>
+        </div>
+</div>
+</div>
+
+<div class="threepage" >
+    <div class="threepage-bg" id="threepagebg"></div>
+
+    <div style="margin: 0 auto;">
+    <div id="xiangzi" class="xiangzi">
+        <img src="images/box.png">
+    </div>
+    <div class="container">
+                <div class="threecontent" id="threecontent">
+                    <h1 style="color: blue">社区自提柜解决快递</h1>
+                    <h1 style="color: blue">配件难痛点</h1>
+                    <p style="margin-top: 20px">全日通自助快递终端是一款基于物联网技术的网络互联密码储物箱,除切割机意外无法强行打开箱门.</p>
+                    <p >用户通过APP获取密码并打开箱门收取快递件,或者收取平台订购的商品.</p>
+                </div>
+    </div>
+    </div>
+    <div style="margin-left: 15%;margin-top: 400px ;position: absolute;">
+        <div class="buzoubut">
+            <a href="###" id="buzoubuta1"><h3 onmousemove="buzou1()">快递员存件流出</h3></a>
+        </div>
+        <div class="buzoubut">
+            <a href="###" id="buzoubuta2"><h3 onmousemove="buzou2()">用户取件流程</h3></a>
+        </div>
+    </div>
+    <div id="imgdiv1" class="imgdiv">
+        <div class="imgbox" style="margin-top: 50px">
+            <p>点击快递员存件</p>
+            <div class="photo-container">
+                <div id="imgbz_1">
+                    <img src="images/shou/01.jpg" style="height: 150px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top: 40px">
+            <p>扫描IC卡</p>
+            <div class="photo-container">
+                <div id="imgbz_2">
+                    <img src="images/shou/02.jpg" style="height: 170px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top: 30px">
+            <p>点击存件</p>
+            <div class="photo-container">
+                <div id="imgbz_3">
+                    <img src="images/shou/03.jpg" style="height: 190px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top:20px">
+            <p>扫描快件条形码</p>
+            <div class="photo-container">
+                <div id="imgbz_4">
+                    <img src="images/shou/04.jpg" style="height: 210px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top: 10px">
+            <p>存入快件并关上箱门</p>
+            <div class="photo-container">
+                <div id="imgbz_5">
+                    <img src="images/shou/05.jpg" style="height: 230px">
+                </div></div>
+        </div>
+    </div>
+
+    <div id="imgdiv2" class="imgdiv">
+        <div class="imgbox" style="margin-top: 50px">
+            <p>点击快递员存件</p>
+            <div class="photo-container">
+                <div id="imgbz_6">
+                    <img src="images/qu/01.jpg" style="height: 150px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top: 50px">
+            <p>扫描IC卡</p>
+            <div class="photo-container">
+                <div id="imgbz_7">
+                    <img src="images/qu/02.jpg" style="height: 170px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top: 30px">
+            <p>点击存件</p>
+            <div class="photo-container">
+                <div id="imgbz_8">
+                    <img src="images/qu/03.jpg" style="height: 190px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top: 20px">
+            <p>扫描快件条形码</p>
+            <div class="photo-container">
+                <div id="imgbz_9">
+                    <img src="images/qu/04.jpg" style="height: 210px">
+                </div></div>
+        </div>
+        <div class="imgbox" style="margin-top: 10px">
+            <p>存入快件并关上箱门</p>
+            <div class="photo-container">
+                <div id="imgbz_10">
+                    <img src="images/qu/05.jpg" style="height: 230px">
+                </div></div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="fourpage" >
+    <div class="container" >
+        <div class="row">
+            <div class="" style="margin-top: 450px;margin-left: 70px">
+                <div class="">
+                    <h3 >媒体报道</h3>
+                    <hr style="height:1px;border:none;border-top:1px solid #BEBEBE;"/>
+                    <a href="http://www.people.com.cn" target="_blank"><img src="images/logo/people.png"></a>
+                    <a href="http://www.huanqiu.com" target="_blank" style="margin-left: 100px"><img src="images/logo/huanqiu.png"></a>
+                    <a href="http://www.sina.com.cn" target="_blank" style="margin-left: 100px"><img src="images/logo/sina.png"></a>
+                </div>
+
+                <div class="" style="margin-top: 30px">
+                    <h3 >合作伙伴</h3>
+                    <hr style="height:1px;border:none;border-top:1px solid #BEBEBE;"/>
+                    <a href="http://www.24tidy.com" target="_blank"><img src="images/logo/tidy.png"></a>
+                    <a href="http://www.niuhome.com/" target="_blank" style="margin-left: 50px"><img src="images/logo/niuhome.png"></a>
+                    <a href="http://www.ganxike.com" target="_blank" style="margin-left: 50px"><img src="images/logo/ganxike.png"></a>
+                    <a href="http://www.wochu.cn" target="_blank" style="margin-left: 50px"><img src="images/logo/wochu.png"></a>
+                    <a href="http://www.meicai.cn" target="_blank" style="margin-left: 50px"><img src="images/logo/meicai.png"></a>
+                    <a href="http://www.farmlink.cn/" target="_blank" style="margin-left: 50px"><img src="images/logo/farmlink.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="fivepage" >
+    <div class="container" >
+        <div class="row">
+            <div style="float:left">
+<p style="color: white;width: 200px;margin-top: 100px;margin-left: 100px">全日通简介:全日通一家整合各类O2O生活类目,基于地理位置提供生鲜,超市,家政,丽人,
+休闲服务等一系列生活服务项目的社区O2O平台,辅以线下小区自提柜解决存取快递难痛点.</p>
+            </div>
+
+            <div style="float:left">
+                <p style="color: white;margin-top: 150px;margin-left: 150px">
+                    联系我们</p>
+                <p style="color: white;margin-left: 150px">
+                    服务热线:4001-080-386
+                </p>
+            </div>
+
+            <div style="float:left;">
+                <img src="images/map.png" style="margin-top: 100px;margin-left: 150px">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    扫描二维码下载APP
+                </h4>
+            </div>
+            <div class="modal-body" style="text-align: center">
+                <img src="images/code.jpg" style="width: 200px">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 封面 -->
+
+
+<!--<div class="modal" id="fm" tabindex="-1" role="dialog"-->
+     <!--aria-labelledby="myModalLabel" aria-hidden="true" >-->
+   <!--<div style="width: 100%;height: 100%;background-color: lightskyblue;text-align: center; ">-->
+       <!--<a href="###" onclick="closefm()"><img src="images/logo.png" style="width: 200px;margin-top:300px"></a>-->
+   <!--</div>-->
+<!--</div>-->
+
+<div class="fm"  style="position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:lightskyblue;" onclick="closefm()">
+    <a href="###"  class="fmimg" onclick="closefm()"><img src="images/logo.png"></a>
+</div>
+
+</body>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $("#mytab a").click(function(e){
+        e.preventDefault();
+        $(this).tab("show");
+    });
+
+    $(document).ready(function(){
+
+        setTimeout("closefm()", 3000);
+        buzou1();
+        $(window).on("load",function(){
+            window.onscroll= function(){
+                var h=scrollside();
+                if(Math.floor(h)>500){
+                    page2dh();
+                }
+                if(Math.floor(h)>1200){
+                    page3dh();
+                }
+            }
+        });
+    });
+
+
+    function showtwopagedh(){
+        $("#towpage-text").addClass("towpage-text");
+        $("#towpage-text").css("opacity",1);
+
+        $("#box_box1").addClass("box");
+        $("#box_box1").addClass("box1");
+        $("#box_box1").css("opacity",1);
+        $("#box_box2").addClass("box");
+        $("#box_box2").addClass("box2");
+        $("#box_box2").css("opacity",1);
+        $("#box_box3").addClass("box");
+        $("#box_box3").addClass("box3");
+        $("#box_box3").css("opacity",1);
+        $("#box_box4").addClass("box");
+        $("#box_box4").addClass("box4");
+        $("#box_box4").css("opacity",1);
+    }
+
+
+
+    function scrollside(){
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(this).height();
+//        console.log("1--"+scrollTop);
+//        console.log("2--"+Math.floor(scrollHeight-300));
+//        console.log("3--"+windowHeight);
+        return (scrollTop);
+    }
+
+    function toservice(){
+        $("#box_box1").css("margin","-100px 0px");
+        $("#box_box2").css("margin","-100px 755px auto");
+        $("#box_box3").css("margin","400px 0px");
+        $("#box_box4").css("margin","400px 755px");
+        $("#box_box1").css("opacity","0");
+        $("#box_box2").css("opacity","0");
+        $("#box_box3").css("opacity","0");
+        $("#box_box4").css("opacity","0");
+        $("#towpage-text").css("opacity","0");
+        window.scrollTo(0,850);
+        page2dh();
+    }
+
+    function toproduct(){
+        $("#xiangzi").css("opacity","0");
+        $("#threecontent").css("opacity","0");
+        $("#xiangzi").css("left","0px");
+        window.scrollTo(0,1550);
+        page3dh();
+    }
+
+    function tome(){
+        window.scrollTo(0,document.body.scrollHeight)
+    }
+
+
+    function toindex(){
+        $("#title-text-one").css("opacity","0");
+        $("#title-text-one").css("left","100px");
+        page1dh();
+    }
+
+    function page1dh(){
+        $("#title-text-one").animate({
+            opacity:'1',
+            left: '250px'
+        },2000);
+    }
+
+    function page2dh(){
+        $("#towpage-text").animate({
+            opacity:'1'
+        },1000);
+
+        $("#box_box1").animate({
+            opacity:'1',
+            margin: '0px 245px'
+        },1000);
+        $("#box_box2").animate({
+            opacity:'1',
+            margin: '0px 555px auto'
+        },1000);
+        $("#box_box3").animate({
+            opacity:'1',
+            margin: '210px 245px auto'
+        },1000);
+        $("#box_box4").animate({
+            opacity:'1',
+            margin: '210px 555px auto'
+        },1000);
+    }
+
+    function page3dh(){
+        $("#threecontent").animate({
+            opacity:'1'
+        });
+        $("#xiangzi").animate({
+            opacity:'1',
+            left:'15%'
+        });
+    }
+
+    function buzou1(){
+        $("#imgdiv2").hide();
+        $("#imgdiv1").show();
+        $("#imgbz_1").addClass("rotate-box1");
+        $("#imgbz_2").addClass("rotate-box2");
+        $("#imgbz_3").addClass("rotate-box3");
+        $("#imgbz_4").addClass("rotate-box4");
+        $("#imgbz_5").addClass("rotate-box5");
+
+        $("#buzoubuta1").css("color","blue");
+        $("#buzoubuta2").css("color","black");
+
+
+    }
+
+    function buzou2(){
+        $("#imgdiv1").hide();
+        $("#imgdiv2").show();
+        $("#imgbz_6").addClass("rotate-box1");
+        $("#imgbz_7").addClass("rotate-box2");
+        $("#imgbz_8").addClass("rotate-box3");
+        $("#imgbz_9").addClass("rotate-box4");
+        $("#imgbz_10").addClass("rotate-box5");
+
+        $("#buzoubuta2").css("color","blue");
+        $("#buzoubuta1").css("color","black");
+    }
+
+    function showcode(){
+        $('#myModal').modal('show')
+    }
+
+    function closefm(){
+        $(".fm").fadeOut(1000);
+        $('body').css("overflow","visible");
+        page1dh();
+//        $("#title-text-one").addClass("title-text-one");
+//        $("#title-text-one").css("opacity",1);
+    }
+
+
+
+
+    $(window).resize(function(){
+        $('.fmimg').css({
+            position:'absolute',
+            left: ($(window).width() - $('.fmimg').outerWidth())/2,
+            top: ($(window).height() - $('.fmimg').outerHeight())/2 + $(document).scrollTop()
+        });
+    });
+    //初始化函数
+    $(window).resize();
+
+</script>
+</html>
