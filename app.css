@@ -12,6 +12,27 @@ h1,h3,p,a,button{
     src: url(font/simhei.ttf);
 }
 
+@font-face {
+    font-family: msyh;
+    src: url(font/msyh.ttf);
+}@font-face {
+    font-family: hydhj;
+    src: url(font/hydhj.ttf);
+}
+@font-face {
+    font-family: fixedsys;
+    src: url(font/fixedsys.fon);
+}
+
+@font-face {
+    font-family: yy;
+    src: url(font/yy.ttf);
+}
+@font-face {
+    font-family: courier;
+    src: url(font/courier.ttf);
+}
+
 .onepage{
     height: 750px;
 }
@@ -295,6 +316,7 @@ h1,h3,p,a,button{
 .fourpage img{
     /*width: 110px;*/
     /*height: 30px;*/
+    top: 0px;
 }
 .fivepage{
     background-color: #282828;
@@ -316,6 +338,12 @@ h1,h3,p,a,button{
 
 .imgbox img{
     /*height: 150px;*/
+}
+
+.imgbox p{
+    font-family: msyh ;
+    font-size: 14px;
+    color: #454545;
 }
 
 .imgbox_1{
@@ -441,4 +469,34 @@ h1,h3,p,a,button{
 .buzoubut a:active {
     display: inline-block;
 
+}
+
+.lefta1{
+
+}
+
+.newtitle{
+    font-family:fixedsys;font-size: 14px;color: #010101;
+    font-weight: bold;
+}
+
+.newcontent{
+    font-family:fixedsys;font-size: 14px;color: #010101;
+}
+
+.newsr1{
+    float: left;width: 50%;
+}
+.newsr2{
+    float: right;width: 50%;
+}
+
+.newsr3{
+    text-align: left;
+    font-family:fixedsys;font-size: 14px;color: #010101;
+}
+
+.newsr4{
+    text-align: right;
+    font-family:fixedsys;font-size: 14px;color: #010101;
 }
